@@ -1,0 +1,428 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,30pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multibib}
+\newcites{pub}{Publications}
+\newcites{pat}{Patents}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+\usepackage[sfdefault]{utopia}
+% \usepackage{CormorantGaramond}
+% \usepackage{libertinus}
+% \usepackage[sfdefault]{libertine}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% ---- EDUCATION COMMANDS ----
+\newcommand{\resumeEducationSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \small{\underline{Relevant Coursework:} #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeOrgHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------------------------------------
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{flushright}
+  \scriptsize Last Updated: \today \\ % Replace \today with the desired date format if needed
+\end{flushright}
+
+\begin{center}
+    \textbf{\Huge Aditya Sathish} \\ \vspace{1pt}
+    \small (571)-274-1651 $|$ \href{mailto:a@sathish.io}{\underline{a@sathish.io}} $|$ 
+    \href{https://www.linkedin.com/in/adityasathish-io/}{\underline{linkedin.com/in/adityasathish-io}} $|$
+    \href{https://github.com/adityasathish-io}{\underline{github.com/adityasathish-io}} $|$
+    \href{https://sathish.io.io}{\underline{aditya.sathish.io}}
+\end{center}
+
+%-----------SUMMARY-------------
+\section{Summary}
+Wireless systems engineer with 7+ years of experience in Wi-Fi (IEEE 802.11ax/be/bn), 5G NR and NR-U protocols.
+Proven track record in device driver development, MAC layer design, and wireless testbed deployment. Thorough
+experience in software-defined networking (SDN), software-defined radios (SDRs), network simulation, and
+standards-driven R\&D in wireless systems at Qualcomm and Virginia Tech.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    % \resumeSubheading
+    %   {Virginia Tech}{Arlington, VA, USA}
+    %   {Doctor of Philosophy (Ph.D.) in Computer Engineering, GPA: 3.78/4.0}{Aug 2022 -- May 2026 (Est.)}
+    \resumeSubheading
+      {Virginia Tech}{Arlington, VA, USA}
+      {Master of Science (M.S., Thesis) in Computer Engineering, GPA: 3.78/4.0}{Aug 2022 -- Sept 2024}
+    \resumeSubheading
+      {National Institute of Technology Karnataka}{Surathkal, KA, India}
+      {Bachelor of Technology (B.Tech.) in Electrical and Electronics Engineering}{Aug 2013 -- May 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Senior Engineer}{October 2024 -- \textit{Present}}
+      {Qualcomm Incorporated}{Santa Clara, CA, USA}
+      \resumeItemListStart
+        \resumeItem{Developed the low-level design and RFC in hostapd, mac80211 and ath12k for Wi-Fi 8 Seamless Mobility Domain (SMD)}
+        \resumeItem{Solved numerous engineering challenges in the Qualcomm Wi-Fi 7 Access Point (AP) hardware platforms}
+        \resumeItem{Worked on Wi-Fi 7 as well as EZmesh specifications for multi-AP co-ordination and connectivity for seamless roaming}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Graduate Research Assistant}{Aug 2022 -- Sept 2024}
+      {Commonwealth Cyber Initiative, Virginia Tech}{Arlington, VA, USA}
+      \resumeItemListStart
+        \resumeItem{Led the design, deployment, and maintenance of the OpenStack and SDR infrastructure for the CCI testbed}
+        \resumeItem{Researched on improving spectrum efficiency in the unlicensed spectrum with 5G NR-U}
+        \resumeItem{Researched on resource allocation to improve quality-of-experience with network slicing in 5G RANs}
+        \resumeItem{Worked on discrete event simulations for research into unlicensed channel access}
+        \resumeItem{Experimented with USRP SDRs to prototype physical layer designs using GNU Radio and RFNoC}
+        %\resumeItem{Communicate with managers to set up campus computers used on campus}
+        %\resumeItem{Assess and troubleshoot computer problems brought by students, faculty, and staff}
+        %\resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    \resumeItemListEnd
+  
+    \resumeSubheading
+      {Interim Engineering Intern}{June 2023 -- August 2023}
+      {Qualcomm Incorporated}{Santa Clara, CA, USA}
+      \resumeItemListStart
+        \resumeItem{Devised methods to implement system engineering research to real-world, cutting-edge IEEE 802.11 Wi-Fi}
+        \resumeItem{Worked on designing and implementing protocols for Wi-Fi 7 multi-link operation (MLO)}
+        \resumeItem{Developed solutions to overcome hardware performance limits when connecting multiple MLO clients}
+        \resumeItem{Submitted an IDF for a traffic management algorithm in Wi-Fi 7 multi-link operation (MLO), approved for filing as a patent}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Senior Engineer}{Aug 2017 -- June 2022}
+      {Qualcomm Incorporated}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Played a key role in the development of Qualcomm's proprietary IEEE 802.11 Wi-Fi AP Linux device driver}
+        \resumeItem{Worked with Trace32 and CrashScope for real-time debugging, profiling, and crash analysis}
+        \resumeItem{Designed and implemented protocol blocks for IEEE 802.11 Wi-Fi 5/6/7 AP systems}
+        \resumeItem{Designed and co-maintained features and enhancements for scanning and channel management protocols}
+        \resumeItem{Led the channel management design efforts for the Wi-Fi 6 Automatic Frequency Coordination (AFC) system}
+        \resumeItem{Conducted hiring interviews for the Wi-Fi system software engineering team in Bengaluru}
+        \resumeItem{Mentored junior engineers during their initial period of employment in the team}
+        %\resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+        %\resumeItem{Developed a game in Java to test the generated dungeons}
+        %\resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+        %\resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+        %\resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+        %\resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Summer Research Intern}{May 2016 -- July 2016}
+      {Indian Institute of Science}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Conducted research in High-Performance Computer Architecture (HPCA)}
+        \resumeItem{Participated in a summer school program on advanced computer architecture and GPGPU programming}
+        \resumeItem{Developed a tool to predict execution flows of HPC workloads using machine learning for compiler optimization}
+        %\resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+        %\resumeItem{Developed a game in Java to test the generated dungeons}
+        %\resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+        %\resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+        %\resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+        %\resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------RELEVANT COURSEWORK---------
+\section{Coursework}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+   \textbf{Graduate}{: Software Radios, Cellular Communication Systems, Advanced Machine Learning, Network Security, 5G-Advanced, O-RAN and 6G, Network Architectures and Protocols} \\
+   \textbf{Undergraduate}{: Engineering Calculus, Linear Algebra, Probability and its Applications, Discrete Mathematics, Analog Circuits, Circuit Theory, Digital Signal Processing, Digital Systems Design, Microprocessors, Electromagnetic Theory, Signals and Systems, Digital Circuits, C Programming, Open Source Virtual Instrumentation} \\
+   %\textbf{Certifications}{: 5G Associate (Qualcomm), Machine Learning (Coursera), Deep Learning (Coursera), Machine Learning in Production (Coursera)}
+  }}
+\end{itemize}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Domains}{: Computer Networks, Wireless Networks and Communication, IEEE 802.11 WLAN, 5G, Operating Systems, Linux Kernel and Device Drivers, Software-Defined Networking, Cloud Computing, Machine Learning, Deep Learning} \\
+     \textbf{Languages}{: C, C++, Python, Bash Shell Script, HTML, CSS} \\
+     \textbf{Developer Tools}{: Trace32, CrashScope} \\
+     \textbf{Software Platforms}{: Git, Docker, OpenStack, OpenVSwitch, OpenAirInterface, srsRAN} \\
+     \textbf{Libraries}{: pytorch, numpy, matplotlib, SimPy}
+    }}
+ \end{itemize}
+
+%-----------PUBLICATIONS-----------
+\small{
+    \renewcommand{\refname}{}
+    \nocitepub{*}
+    \bibliographystylepub{ieeetr}
+    \bibliographypub{papers}
+}
+
+%-----------PATENTS-----------
+\small{
+    \renewcommand{\refname}{}
+    \nocitepat{*}
+    \bibliographystylepat{ieeetr}
+    \bibliographypat{patents}
+}
+
+%-----------AWARDS-------------
+\section{Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Best Demo Paper}{, IEEE Military Communications Conference (MILCOM), 2023}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{Seamless Roaming with Wi-Fi 8 Single Mobility Domain (SMD)} $|$ \emph{Wi-Fi, Product Engineering}}{Sept 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Coordinated discussions across global engineering and standards teams to design and architect the Wi-Fi 8 SMD}
+        \resumeItem{Intersected cross-team goals for the Wi-Fi 8 SMD design that considers customer requirements, standards enhancements and engineering challenges to minimize latency and maximize deliverables}
+        \resumeItem{Cowrote the RFC to the Linux Wireless community for hostapd and mac80211-based Wi-Fi device drivers}
+      \resumeItemListEnd
+      \resumeProjectHeading
+      {\textbf{MAC-Layer Optimization for Seamless Roaming with VBSS in EasyMesh Wi-Fi APs} $|$ \emph{Wi-Fi}}{Jan 2025 -- Mar 2025}
+      \resumeItemListStart
+        \resumeItem{Developed optimizations in the EasyMesh Virtual BSS (VBSS) protocol to reduce latency by 50\% using Qualcomm Wi-Fi 7 APs}
+      \resumeItemListEnd
+      \resumeProjectHeading
+      {\textbf{Hardware Experimental Platform for Distributed Spectrum Sharing with 5G NR-U} $|$ \emph{Cellular Networks, 5G}}{Aug 2023 -- Oct 2023}
+      \resumeItemListStart
+        \resumeItem{Developed an FPGA block over OpenAirInterface5G to enable unlicensed and shared spectrum access using 5G systems.}
+      \resumeItemListEnd
+      \resumeProjectHeading
+      {\textbf{Implementation of an End-to-End Closed Loop Open RAN Base Station} $|$ \emph{Cellular Networks, 5G}}{Aug 2023 -- Oct 2023}
+      \resumeItemListStart
+        \resumeItem{Developed an E2 interface between a xApp running on an O-RAN near-RT RIC and srsRAN gNodeB to send RAN control messages to control PRB allocations in the MAC scheduler of the gNodeB.}
+        \resumeItem{Developed an O1 interface between the srsRAN gNodeB and the SMO to send KPI metrics such as RLC buffer and packet drop rate to feed the deep learning model running in a rApp on the O-RAN Non-RT RIC}
+        \resumeItem{Developed the A1 interface between the rApp running on the non-RT RIC and the xApp running on the near-RT RIC to send predictions from the deep learning model to the RAN through the xApp running on the near-RT RIC}
+      \resumeItemListEnd
+      \resumeProjectHeading
+      {\textbf{Study on Open Source 5G Stacks for 5G Research} $|$ \emph{Cellular Networks, 5G}}{Jan 2023 -- April 2023}
+      \resumeItemListStart
+        \resumeItem{Conducted a research survey on the use of open source 5G stacks such as OpenAirInterface and srsRAN}
+        \resumeItem{Experimented with srsRAN and OAI with SDRs in standalone mode while varying bandwidth and numerology}
+        \resumeItem{Compared different 5G core network solutions such as Open5GS and OAI 5GC against virtualization, disaggregation, network slicing capabilities.}
+      \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Study on ML Algorithms for Network Intrusion Detection} $|$ \emph{Machine Learning, Pytorch}}{Jan 2023 -- April 2023}
+        \resumeItemListStart
+          \resumeItem{Developed a machine learning framework for network intrusion detection using the UNSW-NB15 dataset}
+          \resumeItem{Studied and quantified different supervised learning algorithms based on accuracy, ROC and the F1 score}  
+          \resumeItem{Performed ablation analysis to pick out the best features to utilize in the supervised learning algorithms}
+        \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{LTE LAA Prototype using Software-Defined Radios} $|$ \emph{Software Radios, LTE/5G, C/C++}}{Sept 2022 -- Dec 2022}
+          \resumeItemListStart
+            \resumeItem{Conducted a survey on the current state of research in unlicensed spectrum channel access using LTE/5G RANs}
+            \resumeItem{Developed a listen-before-talk framework to run on USRP software-defined radios using the RFNoC framework}
+            \resumeItem{Tested and validated the functionality of channel sensing in software radios in presence of Wi-Fi APs}
+            % \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            % \resumeItem{Visualized GitHub data to show collaboration}
+            % \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+      %       \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+      %       \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+      %       \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+      %     \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Amplified-Reflection Distributed-Denial-of-Service (AR-DDoS) with DNS} $|$ \emph{Network Security}}{Sept 2022 -- Dec 2022}
+          \resumeItemListStart
+            \resumeItem{Recreated an amplified reflection attack using the DNS protocol with the Bind DNS resolver}
+            \resumeItem{Developed a Python tool based on Scapy to orchestrate an AR-DDoS attack over the DNS protocol}
+            \resumeItem{Studied the impact of varying amplification factors on the target device by generating amplification of up to 7.6x}
+            \resumeItem{Quantified reflector saturation while describing advantages of distributing reflection across multiple nodes}
+            % \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            % \resumeItem{Visualized GitHub data to show collaboration}
+            % \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Design and Deployment of the CCI xG Testbed USRP Cloud Network} $|$ \emph{Cloud, SDN}}{Sept 2022 -- Dec 2022}
+          \resumeItemListStart
+            \resumeItem{Designed the wired networking backbone for the OpenStack cloud infrastructure running in the CCI data center}
+            \resumeItem{Developed a Neutron L3 driver to interface the OpenStack network with the SDRs using ONOS}
+            \resumeItem{Solved critical problems relating to matching SDR performance requirements over virtual machines}
+            \resumeItem{Deployed the infrastructure and SDR access over the cloud using Dell server and SDN switch hardware}
+            % \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            % \resumeItem{Visualized GitHub data to show collaboration}
+            % \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{MBSSID and CSA Support for Wi-Fi 7 Access Points} $|$ \emph{Wi-Fi 7, MLO}}{Jan 2022 -- July 2022}
+          \resumeItemListStart
+            \resumeItem{Played a key role in the implementation of MLO enhancements for channel switch and MBSSID operation}
+            \resumeItem{Contributed to the software architecture for Channel Switch Announcement (CSA) and Quiet operation}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Automatic Channel Selection (ACS) Enhancements for Wi-Fi 7} $|$ \emph{Wi-Fi 7, MLO}}{June 2021 -- Apr 2022}
+          \resumeItemListStart
+            \resumeItem{Redesigned the ACS algorithm to include the enhancements relating to Wi-Fi 7 such as preamble puncturing}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Preamble Puncturing and 320MHz Support for Wi-Fi 7} $|$ \emph{Wi-Fi 7, MLO}}{June 2021 -- Apr 2022}
+          \resumeItemListStart
+            \resumeItem{Co-designed and developed the software architecture for implementing preamble puncturing}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Automatic Frequency Coordination (AFC) for 6GHz Operation in Wi-Fi 6E} $|$ \emph{Wi-Fi 6E, AFC}}{Apr 2021 -- June 2022}
+          \resumeItemListStart
+            \resumeItem{Led the channel management efforts at Qualcomm across different geographical locations in the USA and India towards implementing channel and power management algorithms for 6 GHz operation}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AWGN Interference Management System for 6GHz Operation in Wi-Fi 6E} $|$ \emph{Wi-Fi 6E}}{Jan 2021 -- Aug 2021}
+          \resumeItemListStart
+            \resumeItem{Co-designed and developed an algorithm to manage interference with AWGN signals in the 6GHz spectrum}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Contiguous Wideband (5-7GHz) Operation Using Wi-Fi 6/6E APs} $|$ \emph{Wi-Fi 6, Wi-Fi 6E}}{Sept 2020 -- Mar 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a novel method to allow Wi-Fi access points to operate across the 5-7GHz unlicensed spectrum}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Testing and Validation Framework for ACS} $|$ \emph{Wi-Fi 6, Wi-Fi 6E}}{Sep 2017 -- Apr 2018}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a software framework for testing the ACS algorithm without OTA test devices}
+            \resumeItem{Simulated beacons, probe responses and RF conditions to resemble neighboring Wi-Fi AP interference}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Professional Organizations}
+    \resumeSubHeadingListStart
+      \resumeOrgHeading
+      {\textbf{IEEE Student Member} $|$ \emph{IEEE, Virginia Tech}}{Jan 2023 -- Present}
+      \resumeOrgHeading
+      {\textbf{Rotaract Club, NITK Chapter} $|$ \emph{Rotary, NITK}}{Aug 2014 -- May 2017}
+    \resumeSubHeadingListEnd
+
+%-----------INTERESTS-----------
+\section{Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Hiking, Traveling, Baking, Cooking, Pickle Ball, Motorcycling
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

@@ -1,0 +1,24 @@
+{
+  "latex-workshop.latex.outDir": "output",
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-pdf",
+        "-interaction=nonstopmode",
+        "-synctex=1",
+        "-outdir=output",
+        "%DOC%"
+      ]
+    }
+  ],
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (workspace local)",
+      "tools": ["latexmk"]
+    }
+  ],
+}
