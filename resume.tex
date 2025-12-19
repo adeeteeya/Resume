@@ -1,12 +1,15 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
+% Original Author : Jake Gutierrez
+% Current Author: Aditya Sathish
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,30pt]{article}
+%----------DOCUMENT CLASS----------
+\documentclass[letterpaper]{article}
 
+%----------PACKAGES----------
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -31,7 +34,7 @@
 % \usepackage[default]{sourcesanspro}
 
 % serif
-\usepackage[sfdefault]{utopia}
+% \usepackage{sourcesanspro} % something
 % \usepackage{CormorantGaramond}
 % \usepackage{libertinus}
 % \usepackage[sfdefault]{libertine}
@@ -48,6 +51,8 @@
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
+
+\setlength{\footskip}{12pt}
 
 \urlstyle{same}
 
@@ -131,28 +136,27 @@
 
 \begin{center}
     \textbf{\Huge Aditya Sathish} \\ \vspace{1pt}
-    \small (571)-274-1651 $|$ \href{mailto:a@sathish.io}{\underline{a@sathish.io}} $|$ 
+    \small +1-(571)-274-1651 $|$ \href{mailto:aditya@sathish.io}{\underline{aditya@sathish.io}} $|$ 
     \href{https://www.linkedin.com/in/adityasathish-io/}{\underline{linkedin.com/in/adityasathish-io}} $|$
     \href{https://github.com/adityasathish-io}{\underline{github.com/adityasathish-io}} $|$
-    \href{https://sathish.io.io}{\underline{aditya.sathish.io}}
+    \href{https://sathish.io}{\underline{sathish.io}} $|$ San Jose, CA
 \end{center}
 
 %-----------SUMMARY-------------
 \section{Summary}
-Wireless systems engineer with 7+ years of experience in Wi-Fi (IEEE 802.11ax/be/bn), 5G NR and NR-U protocols.
-Proven track record in device driver development, MAC layer design, and wireless testbed deployment. Thorough
-experience in software-defined networking (SDN), software-defined radios (SDRs), network simulation, and
-standards-driven R\&D in wireless systems at Qualcomm and Virginia Tech.
+Wireless research engineer % Replace this with the job description.
+with 8 years of experience spanning licensed (5G NR) and unlicensed (Wi-Fi and NR-U) spectrum systems.
+Proven record of initiating research directions, contributing to  standards-driven R\&D, authoring patents,
+and translating theoretical designs into production-grade MAC/PHY implementations. Experienced in cross-layer
+wireless system design, link/system-level simulation, and collaborative research with global teams across industry
+and academia.
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    % \resumeSubheading
-    %   {Virginia Tech}{Arlington, VA, USA}
-    %   {Doctor of Philosophy (Ph.D.) in Computer Engineering, GPA: 3.78/4.0}{Aug 2022 -- May 2026 (Est.)}
     \resumeSubheading
       {Virginia Tech}{Arlington, VA, USA}
-      {Master of Science (M.S., Thesis) in Computer Engineering, GPA: 3.78/4.0}{Aug 2022 -- Sept 2024}
+      {Master of Science (M.S., Thesis) in Computer Engineering}{Aug 2022 -- Sept 2024}
     \resumeSubheading
       {National Institute of Technology Karnataka}{Surathkal, KA, India}
       {Bachelor of Technology (B.Tech.) in Electrical and Electronics Engineering}{Aug 2013 -- May 2017}
@@ -160,15 +164,27 @@ standards-driven R\&D in wireless systems at Qualcomm and Virginia Tech.
 
 
 %-----------EXPERIENCE-----------
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Senior Engineer}{October 2024 -- \textit{Present}}
       {Qualcomm Incorporated}{Santa Clara, CA, USA}
       \resumeItemListStart
-        \resumeItem{Developed the low-level design and RFC in hostapd, mac80211 and ath12k for Wi-Fi 8 Seamless Mobility Domain (SMD)}
-        \resumeItem{Solved numerous engineering challenges in the Qualcomm Wi-Fi 7 Access Point (AP) hardware platforms}
-        \resumeItem{Worked on Wi-Fi 7 as well as EZmesh specifications for multi-AP co-ordination and connectivity for seamless roaming}
+        \resumeItem{Collaborated with standards teams to propose Wi-Fi 8 specification enhancements}
+        \resumeItem{Performed on-device simulation and validation to confirm design changes for SW design and architecture proposal}
+        \resumeItem{Initiated and authored the first RFC to the open-source wireless community for Wi-Fi 8 Seamless Mobility Domain (SMD)}
+        \resumeItem{Designed the initial specification for EasyMesh standard to support Wi-Fi 8 SMD}
+        \resumeItem{Contributed to the low-level design and implementation in hostapd, mac80211 and ath12k for Wi-Fi 8 SMD}
+        \resumeItem{Solved numerous engineering challenges in aligning high value features to Wi-Fi 7 AP hardware design across FW and HW}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -194,16 +210,6 @@ standards-driven R\&D in wireless systems at Qualcomm and Virginia Tech.
         \resumeItem{Developed solutions to overcome hardware performance limits when connecting multiple MLO clients}
         \resumeItem{Submitted an IDF for a traffic management algorithm in Wi-Fi 7 multi-link operation (MLO), approved for filing as a patent}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
     \resumeSubheading
       {Senior Engineer}{Aug 2017 -- June 2022}
@@ -413,7 +419,7 @@ standards-driven R\&D in wireless systems at Qualcomm and Virginia Tech.
       \resumeOrgHeading
       {\textbf{IEEE Student Member} $|$ \emph{IEEE, Virginia Tech}}{Jan 2023 -- Present}
       \resumeOrgHeading
-      {\textbf{Rotaract Club, NITK Chapter} $|$ \emph{Rotary, NITK}}{Aug 2014 -- May 2017}
+      {\textbf{Rotary, NITK Chapter} $|$ \emph{Rotary, NITK}}{Aug 2014 -- May 2017}
     \resumeSubHeadingListEnd
 
 %-----------INTERESTS-----------
