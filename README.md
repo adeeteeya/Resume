@@ -3,7 +3,7 @@
 This page contains my public resume that is based on LaTeX.
 
 ## Requirements
-- pdflatex
+- pdflatex (and dependent packages)
 ```
 pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
 kpathsea version 6.3.5
