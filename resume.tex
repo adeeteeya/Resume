@@ -5,6 +5,9 @@
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
+% Note:
+% This template was tested agsinst pdflaTeX on Ubuntu 24.04
+%------------------------
 
 %----------DOCUMENT CLASS----------
 \documentclass[letterpaper]{article}
@@ -23,7 +26,7 @@
 \usepackage{tabularx}
 \usepackage{multibib}
 \newcites{pub}{Publications}
-\newcites{pat}{Patents}
+% \newcites{pat}{Patents}
 \input{glyphtounicode}
 
 
@@ -137,8 +140,8 @@
 \begin{center}
     \textbf{\Huge Aditya Sathish} \\ \vspace{1pt}
     \small +1-(571)-274-1651 $|$ \href{mailto:aditya@sathish.io}{\underline{aditya@sathish.io}} $|$ 
-    \href{https://www.linkedin.com/in/adityasathish-io/}{\underline{linkedin.com/in/adityasathish-io}} $|$
-    \href{https://github.com/adityasathish-io}{\underline{github.com/adityasathish-io}} $|$
+    \href{https://www.linkedin.com/in/adeeteeyaa/}{\underline{linkedin.com/in/adeeteeyaa}} $|$
+    \href{https://github.com/adeeteeyaa}{\underline{github.com/adeeteeyaa}} $|$
     \href{https://sathish.io}{\underline{sathish.io}} $|$ San Jose, CA
 \end{center}
 
@@ -275,16 +278,16 @@ and academia.
     \renewcommand{\refname}{}
     \nocitepub{*}
     \bibliographystylepub{ieeetr}
-    \bibliographypub{papers}
+    \bibliographypub{publications}
 }
 
 %-----------PATENTS-----------
-\small{
-    \renewcommand{\refname}{}
-    \nocitepat{*}
-    \bibliographystylepat{ieeetr}
-    \bibliographypat{patents}
-}
+% \small{
+%     \renewcommand{\refname}{}
+%     \nocitepat{*}
+%     \bibliographystylepat{ieeetr}
+%     \bibliographypat{patents}
+% }
 
 %-----------AWARDS-------------
 \section{Awards}
